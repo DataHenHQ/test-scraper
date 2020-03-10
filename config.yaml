@@ -1,7 +1,4 @@
 seeder:
   file: ./seeder/seeder.rb
 exporters:
- - exporter_name: from_seeder_json
-   exporter_type: json
-   collection: from_seeder
-   write_mode: pretty_array
+ - file: ./exporters/from_seeder_json.yaml
