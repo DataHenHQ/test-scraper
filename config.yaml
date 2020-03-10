@@ -1,4 +1,5 @@
-seeder: ./seeder/seeder.rb
+seeder:
+  file: ./seeder/seeder.rb
 exporters:
  - exporter_name: from_seeder_json
    exporter_type: json
