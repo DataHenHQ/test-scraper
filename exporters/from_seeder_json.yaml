@@ -1,0 +1,4 @@
+exporter_name: from_seeder_json
+exporter_type: json
+collection: from_seeder
+write_mode: pretty_array
