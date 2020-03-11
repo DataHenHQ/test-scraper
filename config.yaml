@@ -2,3 +2,4 @@ seeder:
   file: ./seeder/seeder.rb
 exporters:
   - file: ./exporters/from_seeder_json.yaml
+parse_failed_pages: true
