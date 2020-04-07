@@ -2,6 +2,6 @@ seeder:
   file: ./seeder/seeder.rb
 exporters:
   - file: ./exporters/from_seeder_json.yaml
-nput_vars:
+input_vars:
  - name: start_var1
    type: text
