@@ -42,7 +42,7 @@ outputs << {
 
 outputs << {
   _collection: "from_seeder",
-  _id: "env_vars".
+  _id: "env_vars",
   start_with_env_var2: ENV["start_with_env_var2"],
   start_with_global_env_var3: ENV["start_with_global_env_var3"],
   start_with_env_var4: ENV["start_with_env_var4"],
