@@ -9,7 +9,8 @@ pages << {
       options: {
        fullPage: false,
        type: "png"
-     }
+      }
+    }
 }
 
 pages << {
@@ -19,11 +20,12 @@ pages << {
   url: "https://unsplash.com/s/photos/toronto?withimage=true",
   driver: {
     enable_images: true
-  }
+  },
   screenshot: {
     take_screenshot: true,
     options: {
      fullPage: false,
      type: "png"
+    }
    }
 }
