@@ -1,30 +1,29 @@
 
 pages << {
-    page_type: 'from_seeder', 
+    fetch_type: 'browser',
+    page_type: 'screenshots', 
     method: "GET",
-    url: "https://fetchtest.datahen.com/?q=from_seeder" 
+    url: "https://unsplash.com/s/photos/toronto",
+    screenshot: {
+      take_screenshot: true,
+      options: {
+       fullPage: false,
+       type: "png"
+     }
 }
 
-outputs << {
-  _collection: "from_seeder",
-  _id: "foo1",
-  desc: "foo 1",
-  foo: "foo value 1",
-  from: "seeder"
-}
-
-outputs << {
-  _collection: "from_seeder",
-  _id: "foo2",
-  desc: "foo 2",
-  foo: "foo value 2",
-  from: "seeder"
-}
-
-outputs << {
-  _collection: "from_seeder",
-  _id: "bar1",
-  desc: "bar 1",
-  bar: "bar value 1",
-  from: "seeder"
+pages << {
+  fetch_type: 'browser',
+  page_type: 'screenshots', 
+  method: "GET",
+  url: "https://unsplash.com/s/photos/toronto?withimage=true",
+  driver: {
+    enable_images: true
+  }
+  screenshot: {
+    take_screenshot: true,
+    options: {
+     fullPage: false,
+     type: "png"
+   }
 }
